@@ -1,0 +1,12 @@
+<ion-view view-title="#Fast">
+  <ion-content has-header="true" padding="true" class="padding">
+    
+    <div class="row row-center">
+      <div class="col  col-center"><h1 class="main__upload" ng-click="addMedia()">Upload <i class="icon ion-arrow-up-a"></i></h1></div>
+    </div>
+     <br><br>
+    <ion-scroll direction="x" style="height:200px; min-height: 200px; overflow: scroll; white-space: nowrap;">
+      <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" style="height:200px; padding: 5px 5px 5px 5px;"/>
+    </ion-scroll>
+  </ion-content>
+</ion-view>
